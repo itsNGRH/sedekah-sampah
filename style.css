@@ -28,11 +28,11 @@
 body {
   margin: 0;
   font-family:
+    "Inter",
     ui-sans-serif,
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
-    "Inter",
     sans-serif;
 
   background:
@@ -78,9 +78,8 @@ section {
 
 .saldo h2 {
   margin: 0;
-  font-size: 13px;
-  color: var(--muted);
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 #saldo {
@@ -181,7 +180,7 @@ td.masuk { color: var(--green); }
 td.keluar { color: var(--red); }
 
 .kontak h2 {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
   font-size: 16px;
   font-weight: 600;
 }
