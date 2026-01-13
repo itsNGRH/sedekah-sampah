@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♻️</text></svg>">
+        <title>Sedekah Sampah</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Sedekah Sampah</h1>
+            <p>Catatan Keuangan · Karya Muda</p>
+        </header>
+
+        <section class="saldo">
+            <h2>Saldo</h2>
+            <div id="saldo">Loading...</div>
+        </section>
+
+        <section class="ringkasan">
+            <div>
+                <h3>Pemasukan</h3>
+                <p id="masuk">-</p>
+            </div>
+            <div>
+                <h3>Pengeluaran</h3>
+                <p id="keluar">-</p>
+            </div>
+        </section>
+
+        <section class="riwayat">
+            <h2>Riwayat</h2>
+
+            <div class="table-wrapper">
+                <table>
+                <thead>
+                    <tr>
+                    <th>Tanggal</th>
+                    <th>Jenis</th>
+                    <th>Kategori</th>
+                    <th>Keterangan</th>
+                    <th>Jumlah</th>
+                    </tr>
+                </thead>
+                <tbody id="tabel-transaksi"></tbody>
+                </table>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end;">
+                <a id="link-sheet" target="_blank">Selengkapnya →</a>
+            </div>
+        </section>
+
+        <section class="kontak">
+            <h2>Pengepul</h2>
+
+            <div class="kontak-card">
+                <p class="nama">BERES ROSOK</p>
+                <p class="alamat">Cokrowijayan, Banyuraden, Gamping, Sleman</p>
+                <p class="telepon">0889-8331-5015</p>
+                <a
+                    class="btn-wa"
+                    href="https://wa.me/6288983315015?text=Permisi,%20kami%20ingin%20menjual%20sampah%20yang%20sudah%20dipilah.%20Apakah%20bisa%20dibantu?"
+                    target="_blank"
+                    rel="noopener"
+                >Hubungi</a>
+            </div>
+        </section>
+
+        <footer>
+            <p id="last-update"></p>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>

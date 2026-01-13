@@ -1,0 +1,253 @@
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --surface: #f1f5f9;
+
+  --text: #0f172a;
+  --muted: #64748b;
+
+  --green: #16a34a;
+  --red: #dc2626;
+
+  --border: rgba(15, 23, 42, 0.08);
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.04);
+  --shadow-md: 0 8px 24px rgba(15,23,42,.06);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Inter",
+    sans-serif;
+
+  background:
+    radial-gradient(
+      1200px 400px at top center,
+      #f1f5f9,
+      var(--bg)
+    );
+
+  color: var(--text);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+header {
+  padding: 28px 20px 16px;
+  display: grid;
+  gap: 6px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+section {
+  background: var(--card);
+  margin: 14px 16px;
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.saldo h2 {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+#saldo {
+  margin-top: 6px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.ringkasan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.ringkasan > div {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  border: 1px solid var(--border);
+}
+
+.ringkasan h3 {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+#masuk,
+#keluar {
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#masuk { color: var(--green); }
+#keluar { color: var(--red); }
+
+.riwayat h2 {
+  margin: 0 0 14px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.riwayat a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.riwayat a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+thead {
+  background: var(--surface);
+}
+
+th,
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+td:last-child {
+  text-align: right;
+  font-weight: 600;
+}
+
+td.masuk { color: var(--green); }
+td.keluar { color: var(--red); }
+
+.kontak h2 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.kontak-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: grid;
+}
+
+.kontak-card .nama {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.kontak-card .alamat,
+.kontak-card .telepon {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.maps-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+.maps-link:hover {
+  opacity: 1;
+}
+
+.btn-wa {
+  margin-top: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-wa:hover {
+  filter: brightness(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 14px 0 20px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+@media (min-width: 640px) {
+  body {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+}
